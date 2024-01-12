@@ -5,7 +5,7 @@ const router = new Router();
 
 module.exports = router;
 
-const googleApiKey_dev = 'AIzaSyA5JLcx73Bv6AUO4vrcaY9cd5J7ZMG4wWU'
+const googleApiKey_dev = ''; //Add Google API key here
 
 
 router.get('/autocompleteAddress', (req, res) => {
