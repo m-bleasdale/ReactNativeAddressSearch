@@ -20,9 +20,3 @@ export const WhereQuery = create((set) => (
         },
     }
 ));
-
-export const WhenQuery = create((set) => (
-    {
-        
-    }
-));
