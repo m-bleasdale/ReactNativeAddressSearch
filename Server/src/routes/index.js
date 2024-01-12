@@ -1,4 +1,3 @@
-const vehicles = require('./vehicles.js');
 const mapping = require('./mapping.js');
 
 console.log('mounting routes...');
@@ -8,12 +7,7 @@ console.log('mounting routes...');
 const mountRoutes = (app) => {
 
     console.log('routes mounted');
-
-    app.use('/vehicles', vehicles);
-    // - GET vehicle by ID
-    // - GET all vehicles
-    // - POST new vehicle
-
+    
     app.use('/mapping', mapping);
     // - GET address autocomplete
 
