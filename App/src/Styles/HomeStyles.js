@@ -39,17 +39,6 @@ const SearchFromHomeStyles = StyleSheet.create({
         elevation: 2,
     },
 
-    whenInner: {
-        flexDirection: 'row'
-    },
-
-    whenButtonSection: {
-        width:'45%',
-        paddingLeft: '5%',
-        flexDirection: 'column',
-        borderColor: '#000'
-    },
-
     searchLabel: {
         paddingLeft: '5%',
         fontSize: 15,
