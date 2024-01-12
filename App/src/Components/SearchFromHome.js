@@ -5,9 +5,7 @@ import HomeStyles from '../Styles/HomeStyles'
 
 import { WhereQuery } from '../Store/SearchQuery';
 
-const SearchFromHome = ({navigation}) => {
-    const [when, setWhen] = useState(null);
-    
+const SearchFromHome = ({navigation}) => {    
     const { description } = WhereQuery();
 
     const onSubmit = data => console.log(data);
@@ -33,38 +31,10 @@ const SearchFromHome = ({navigation}) => {
         )
     }
 
-    const WhenSelect = () => {
-
-        function handlePress(){
-            navigation.navigate('WhenSelect');
-        }
-
-        return (
-            <TouchableWithoutFeedback onPress={handlePress}>
-
-                <View style={HomeStyles.searchButton}>
-                    <View style={HomeStyles.whenInner}>
-                        <View style={HomeStyles.whenButtonSection}>
-                            <Text style={HomeStyles.searchLabel}>Pickup</Text>
-                            <Text style={HomeStyles.searchLocations}>Add dates</Text>
-                        </View>
-                        <View style={HomeStyles.whenButtonSection}>
-                            <Text style={HomeStyles.searchLabel}>Return</Text>
-                        </View>
-                    </View>
-                </View>
-
-            </TouchableWithoutFeedback>
-        )
-        
-    }
-
     return (
         <SafeAreaView style={HomeStyles.container}>
 
             <WhereSearch where={description} />
-
-            <WhenSelect />
 
             <Button title="Submit" onPress={onSubmit} />
         </SafeAreaView>
